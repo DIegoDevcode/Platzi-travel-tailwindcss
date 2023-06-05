@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../public/css/tailwind.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
    <title>Platzi travel</title>
 </head>
+
 <body>
-   <p class="font-Montserrat text-xl">Hello world</p>
-   <div class="w-64 h-64 bg-primary">
-      <p>hola</p>
-   </div>
+   <nav></nav>
+   <div id="tab_bar"></div>
+   <section class="w-full h-screen">
+      <div id="home">
+         <div class="w-full h-3/4">
+            <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+               <input class="outline-none py-3 rounded-full shadow-sm text-center1" placeholder="San Francisco" type="search" name="" id="">
+               <button class="bg-white text-xl font-semibold p-4 w-36 rounded-full text-primary shadow-sm">Explorar</button>
+            </div>
+            <div class="w-full h-full">
+               <img src="../assets/sanFrancisco.jpg" alt="">
+            </div>
+         </div>
+      </div>
+      <div id="recomendadas"></div>
+      <div id="rentas_destacadas"></div>
+      <div id="faq"></div>
+   </section>
+   <footer></footer>
 </body>
+
 </html>
