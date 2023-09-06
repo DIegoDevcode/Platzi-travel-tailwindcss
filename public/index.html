@@ -33,15 +33,45 @@
             </div>
          </div>
          <div class="flex items-center flex-col" id="recommendations">
-            <div class="Card">
-               <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover shadow-md "></div>
-               <div class=" w-full h-2/5 bg-secondary text-center rounded-b-lg">
-                  <p class="font-bold text-xl text-white py-1">Norway</p>
-                  <p class="text-white text-md">Paisajes increibles</p>
+            <p class="text-3xl font-semibold text-center text-primary ">Recomendados</p>
+            <div class="w-auto h-72 mt-6 overflow-x-auto overscroll-x-contain flex space-x-4">
+               <div class="Card">
+                  <div class="Card--cover bg-norway "></div>
+                  <div class="Card--info">
+                     <p class="Card--info__title">Norway</p>
+                     <p class="Card--info__subtitle">Paisajes increibles</p>
+                  </div>
+               </div>
+               <div class="Card">
+                  <div class="Card--cover bg-new_york"></div>
+                  <div class=" Card--info">
+                     <p class="Card--info__title">New York</p>
+                     <p class="Card--info__subtitle">La gran Manzana</p>
+                  </div>
+               </div>
+               <div class="Card">
+                  <div class="Card--cover bg-yosemite "></div>
+                  <div class="Card--info">
+                     <p class="Card--info__title">Yosemite</p>
+                     <p class="Card--info__subtitle">Un descanso del mundo</p>
+                  </div>
+               </div>
+               <div class="Card">
+                  <div class="Card--cover bg-seattle"></div>
+                  <div class=" Card--info">
+                     <p class="Card--info__title">Seattle</p>
+                     <p class="Card--info__subtitle">Gran Ciudad</p>
+                  </div>
+               </div>
+               <div class="Card">
+                  <div class="Card--cover bg-switzerland "></div>
+                  <div class="Card--info">
+                     <p class="Card--info__title">Switzerland</p>
+                     <p class="Card--info__subtitle">Una ciudad increible</p>
+                  </div>
                </div>
             </div>
-         </div>
-         <div id="featured_rentals"></div>
+            <div id="featured_rentals"></div>
       </section>
    </main>
 </body>

@@ -3,5 +3,24 @@
 @tailwind utilities;
 
 .Card {
-  @apply w-48 h-64 shadow-md rounded-lg pt-4;
+  @apply w-48 h-64 shadow-md rounded-lg pt-4 overflow-hidden flex-none;
+}
+.Card--cover {
+  @apply w-full h-3/5 rounded-t-lg  bg-cover shadow-md;
+}
+.Card--info {
+  @apply w-full h-2/5 bg-secondary text-center rounded-b-lg;
+}
+.Card--info__title {
+  @apply text-white font-bold text-xl px-4 py-2;
+}
+.Card--info__subtitle {
+  @apply text-white text-base px-4;
+}
+.Card:nth-child(even) .Card--info {
+  @apply bg-white;
+}
+.Card:nth-child(even) .Card--info__title,
+.Card:nth-child(even) .Card--info__subtitle {
+  @apply text-terciary;
 }
