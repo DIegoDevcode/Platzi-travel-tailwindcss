@@ -7,6 +7,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/af0bf7190a.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="../public/css/tailwind.css">
    <title>Platzi Travel</title>
 </head>
@@ -14,7 +15,6 @@
 <body>
    <header>
       <nav></nav>
-      <div id="tabBar"></div>
    </header>
    <main>
       <section class="w-full h-auto">
@@ -128,16 +128,22 @@
             </div>
       </section>
    </main>
-   <footer class="w-full h-auto bg-slate-600 text-gray-300 p-6 space-y-6">
-      <p class="text-lg">Acerca de</p>
-      <ul>
-         <li class="text-sm">Acerca de</li>
-         <li class="text-sm">Inversionistas </li>
-         <li class="text-sm">Empleos</li>
-         <li class="text-sm">Terminos y condiciones</li>
-         <li class="text-sm">PlatziTravel</li>
+   <footer class="w-full h-auto bg-white text-secondary p-6 space-y-2">
+      <p class="text-xl text-primary">Acerca de</p>
+      <ul class="pb-10">
+         <li class="text-sm font-semibold">Inversionistas </li>
+         <li class="text-sm font-semibold">Empleos</li>
+         <li class="text-sm font-semibold">Terminos y condiciones</li>
+         <li class="text-sm font-semibold">PlatziTravel</li>
       </ul>
    </footer>
+   <div class="w-auto h-18  fixed bottom-2 flex space-x-8 ml-32 text-2xl" id="tabBar">
+      <a href="#home"><i class="fa-solid fa-house"></i></a>
+      <a href="#featured_rentals"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#recommendations"><i class="fa-regular fa-heart"></i></a>
+      <a href=""><i class="fa-solid fa-user"></i></a>
+      <a href=""><i class="fa-solid fa-moon"></i></a>
+   </div>
 </body>
 
 </html>
