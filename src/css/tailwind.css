@@ -9,7 +9,7 @@
   @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white;
 }
 .Card--cover {
-  @apply w-full h-3/5 rounded-t-lg  bg-cover shadow-md;
+  @apply w-full h-3/5 rounded-t-lg  bg-cover shadow-md lg:bg-cover;
 }
 .Card--info {
   @apply w-full h-2/5 bg-secondary text-center rounded-b-lg;
