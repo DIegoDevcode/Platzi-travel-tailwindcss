@@ -9,7 +9,6 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/af0bf7190a.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="../public/css/tailwind.css">
-   <script src="../script.js"></script>
    <title>Platzi Travel</title>
 </head>
 
@@ -42,8 +41,7 @@
          </div>
          <div class="flex items-center flex-col" id="recommendations">
             <p class="text-3xl font-semibold text-center text-primary ">Recomendados</p>
-            <div class="w-auto h-72 mt-6 overflow-x-auto overscroll-x-contain flex space-x-4" id="">
-               <button class="pl-6 lg:hidden" id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="w-auto h-auto mt-6 overflow-x-auto overscroll-x-contain flex space-x-4">
                <div class="Card">
                   <div class="Card--cover bg-norway"></div>
                   <div class="Card--info">
@@ -65,6 +63,8 @@
                      <p class="Card--info__subtitle">Un descanso del mundo</p>
                   </div>
                </div>
+            </div>
+            <div class="w-auto h-72 mt-6 overflow-x-auto overscroll-x-contain flex space-x-4">
                <div class="Card">
                   <div class="Card--cover bg-seattle"></div>
                   <div class=" Card--info">
@@ -86,7 +86,7 @@
                      <p class="Card--info__subtitle">Conoce la famosilla ciudad de la opera</p>
                   </div>
                </div>
-               <button class="lg:hidden" id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+
             </div>
             <div id="trending-stays" class="p-6 h-full w-full">
                <p class="text-3xl text-primary font-semibold">Trending Stays</p>
@@ -165,12 +165,12 @@
          <li class="text-sm font-semibold">PlatziTravel</li>
       </ul>
    </footer>
-   <div class="w-auto h-18  fixed bottom-2 flex space-x-8 ml-32 text-2xl lg:hidden" id="tabBar">
-      <a href="#home"><i class="fa-solid fa-house"></i></a>
-      <a href="#featured_rentals"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <a href="#recommendations"><i class="fa-regular fa-heart"></i></a>
-      <a href=""><i class="fa-solid fa-user"></i></a>
-      <a href=""><i class="fa-solid fa-moon"></i></a>
+   <div class="w-auto h-18  fixed bottom-2 flex space-x-8 ml-16 text-2xl lg:hidden" id="tabBar">
+      <a href="#home"><i class="fa-solid fa-house text-red-500"></i></a>
+      <a href="#trending-stays"><i class="fa-solid fa-magnifying-glass text-red-500"></i></a>
+      <a href="#recommendations"><i class="fa-regular fa-heart text-red-500"></i></a>
+      <a href=""><i class="fa-solid fa-user text-red-500"></i></a>
+      <a href=""><i class="fa-solid fa-moon text-red-500"></i></a>
    </div>
 </body>
 
