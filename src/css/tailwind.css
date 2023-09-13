@@ -31,3 +31,10 @@
 .Card:nth-child(even) .Card--info__subtitle {
   @apply text-terciary;
 }
+.nav-items {
+  @apply font-bold text-base text-primary;
+}
+
+.nav-icons {
+  @apply text-base text-primary;
+}
