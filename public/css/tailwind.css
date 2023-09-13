@@ -578,10 +578,6 @@ video {
   height: 75%;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
 .h-96 {
   height: 24rem;
 }
@@ -784,6 +780,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-Montserrat {
+  font-family: Montserrat, sans-serif;
 }
 
 .text-2xl {
@@ -1034,10 +1034,9 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
+:is(.dark .dark\:bg-gray-900) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {

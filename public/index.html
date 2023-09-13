@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{dark:false}" x-bind:class="dark ? 'dark' : ''">
 
 <head>
    <meta charset="UTF-8">
@@ -9,10 +9,11 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/af0bf7190a.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="../public/css/tailwind.css">
+   <script src="//unpkg.com/alpinejs" defer></script>
    <title>Platzi Travel</title>
 </head>
 
-<body>
+<body class="font-Montserrat dark:bg-gray-900">
    <header>
       <nav class="w-full h-14 hidden bg-white lg:flex lg:fixed lg:z-10 p-4 justify-between border-b-4 border-cyan-600">
          <div class="h-auto w-auto">
@@ -30,9 +31,9 @@
             <a href="">
                <i class="nav-icons fa-search fa-solid"></i>
             </a>
-            <a href="">
-               <i class="nav-icons fa-moon fa-solid"></i>
-            </a>
+            <button x-on:click="dark=!dark">
+               <i class="nav-icons fa-solid fa-moon"></i>
+            </button>
             <a href="./registrationForm.html">
                <i class="nav-icons fa-user fa-solid"></i>
             </a>
