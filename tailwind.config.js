@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
-  content: ["./public/index.html", "./src/**/*.{html,js}"],
+  content: [
+    "./public/index.html",
+    "./public/registrationForm.html",
+    "./src/**/*.{html,js}",
+  ],
   theme: {
     textColor: (theme) => ({
       ...theme("colors"),
@@ -38,5 +42,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
