@@ -38,3 +38,7 @@
 .nav-icons {
   @apply text-base text-primary;
 }
+
+.Mobile-heigth{
+  height: 45rem;
+}
