@@ -717,6 +717,11 @@ select {
   bottom: 0.5rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-16 {
   margin-left: 4rem;
 }
@@ -727,10 +732,6 @@ select {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
 }
 
 .flex {
@@ -765,6 +766,10 @@ select {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -777,16 +782,16 @@ select {
   width: 100%;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
-.w-36 {
-  width: 9rem;
+.w-screen {
+  width: 100vw;
 }
 
 .w-80 {
   width: 20rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .scale-110 {
@@ -805,6 +810,10 @@ select {
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -869,14 +878,6 @@ select {
   border-radius: 0.75rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .border-b-4 {
   border-bottom-width: 4px;
 }
@@ -896,11 +897,6 @@ select {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -912,43 +908,47 @@ select {
 }
 
 .bg-LA {
-  background-image: url('../img/LA.jpg');
+  background-image: url('./img/LA.jpg');
 }
 
 .bg-bali {
-  background-image: url('../img/bali.jpg');
+  background-image: url('./img/Bali.jpg');
 }
 
 .bg-chicago {
-  background-image: url('../img/chicago.jpg');
+  background-image: url('./img/Chicago.jpg');
 }
 
 .bg-miami {
-  background-image: url('../img/miami.jpg');
+  background-image: url('./img/Miami.jpg');
 }
 
 .bg-new_york {
-  background-image: url('../img/new_york.jpg');
+  background-image: url('./img/New_york.jpg');
 }
 
 .bg-norway {
-  background-image: url('../img/norway.jpg');
+  background-image: url('./img/Norway.jpg');
+}
+
+.bg-sanFrancisco {
+  background-image: url('./img/sanFrancisco.jpg');
 }
 
 .bg-seattle {
-  background-image: url('../img/seattle.jpg');
+  background-image: url('./img/Seattle.jpg');
 }
 
 .bg-switzerland {
-  background-image: url('../img/switzerland.jpg');
+  background-image: url('./img/Switzerland.jpg');
 }
 
 .bg-sydney {
-  background-image: url('../img/sydney.jpg');
+  background-image: url('./img/Sydney.jpg');
 }
 
 .bg-yosemite {
-  background-image: url('../img/yosemite.jpg');
+  background-image: url('./img/Yosemite.jpg');
 }
 
 .bg-cover {
@@ -993,40 +993,28 @@ select {
   padding-top: 0.5rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
 .pt-32 {
   padding-top: 8rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
 }
 
 .pt-3 {
   padding-top: 0.75rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -1055,6 +1043,16 @@ select {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-black {
@@ -1259,6 +1257,10 @@ select {
   color: rgb(204 45 74 / var(--tw-text-opacity));
 }
 
+.Mobile-heigth{
+  height: 45rem;
+}
+
 .focus-within\:shadow-sm:focus-within {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -1388,7 +1390,7 @@ select {
   }
 
   .lg\:bg-sanFranciscoDesktop {
-    background-image: url('../img/sanFranciscoDesktop.jpg');
+    background-image: url('./img/sanFranciscoDesktop.jpg');
   }
 
   .lg\:bg-cover {
